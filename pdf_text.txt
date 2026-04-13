@@ -1,0 +1,130 @@
+DOKUMEN 
+NEGARA  
+UJI KOMPETENSI KEAHLIAN  
+TAHUN PELAJARAN 2023/2024  
+SOAL PRAKTIK KEJURUAN  
+Satuan Pendidikan : Sekolah Menengah 
+Kejuruan Kompetensi Keahlian : Rekayasa 
+Perangkat Lunak Kode : KM3063  
+Alokasi Waktu : 8 jam  
+Bentuk Soal : Penugasan Perorangan Judul 
+Tugas : Aplikasi Kasir  
+I. PETUNJUK UMUM  
+1. Periksalah dengan teliti dokumen soal ujian 
+praktik ! 2. Periksalah peralatan dan bahan 
+yang dibutuhkan !  
+Paket  4  
+3. Gunakan peralatan utama dan peralatan keselamatan kerja yang telah disediakan! 4. 
+Gunakan peralatan sesuai dengan SOP (Standard Operating Procedure) ! 5. Bekerjalah 
+dengan memperhatikan petunjuk Pembimbing/Penguji !  
+II. DAFTAR PERALATAN  
+No.  
+Nama  
+Alat dan Bahan 
+Spesifikasi Minimal  
+Jumlah  
+Keterangan 
+1  
+2  
+3  
+4  
+5 
+
+1.  
+Komputer (PC/Laptop) 
+yang  difungsikan sebagai 
+server 
+- Prosesor : Dual Core  2,4 
+GHz (2,93GHz untuk yang  
+memilih platform mobile)  
+- RAM : 2 GB (4GB  untuk 
+yang memilih platform  
+mobile)  
+- Keyboard  
+- Mouse  
+- Monitor 
+1 Unit  
+Baik  
+2.  
+Komputer (PC/Laptop) 
+yang  difungsikan sebagai 
+client 
+- Prosesor : Dual Core  2,4 
+GHz (2,93GHz untuk yang  
+memilih platform mobile)  
+- RAM : 2 GB (4GB  untuk 
+yang memilih platform  
+mobile)  
+- Keyboard  
+- Mouse  
+- Monitor 
+1 unit  
+Baik  
+3.  
+Smart Phone  
+Android /IOS  
+1 unit  
+Baik  
+4.  
+Koneksi Internet  
+Minimal 1 Mbps  
+ 
+Baik  
+ 
+ 
+1. 
+DOKUMEN 
+NEGARA  
+III. SOAL/TUGAS  
+Judul Tugas : Membuat Aplikasi Kasir 
+Langkah Kerja :  
+Paket  4  
+1. Buatlah daftar kebutuhan teknis dan spesifikasi perangkat yang dibutuhkan pada  lembar 
+yang disediakan !  
+2. Siapkan peralatan dan bahan yang diperlukan sesuai dengan daftar peralatan ! 3. Installah 
+text editor dan software pendukung lainnya yang digunakan untuk  memprogram aplikasi 
+kasir !  
+4. Interpretasikan spesifikasi program yang diberikan  
+1. Aplikasi berbasis sistem client-server  
+2. Aplikasi dapat dibuat berbasis desktop, web atau perangkat bergerak 3. Aplikasi 
+menggunakan pembagian privilege dengan tingkatan (administrator dan  petugas)  
+
+5. Buatlah Desain User Interface   
+1. Fitur minimal dan pembagian privilege dalam aplikasi  
+Fitur  
+administrator  
+petugas 
+Login  
+X  
+X 
+Logout  
+X  
+X 
+Registrasi  
+X 
+ 
+Pendataan Barang  
+X  
+X 
+Pembelian 
+ 
+ 
+Stok Barang  
+X  
+X 
+ 
+ 
+2. Desain dibuat dengan memperhatikan kaidah UI/UX  
+3. Form pelaporan dibuat sekomunikatif mungkin   
+4. Terapkan pemrograman berbasis objek (object oriented programming) 6. Buatlah 
+database yang digunakan untuk menambah, mengedit, menghapus, dan  melihat data 
+penjualan barang !  
+7. Running dan testing hasil program !  
+8. Buatlah dikumentasi kode program dan upload portofolio pada github ! 
+P1-23/24 Hak Cipta pada Kemendikbudristek SPK-2/3  
+DOKUMEN 
+NEGARA IV. GAMBAR KERJA  
+Paket  4  
+
+“SELAMAT & SUKSES” 
+P1-23/24 Hak Cipta pada Kemendikbudristek SPK-3/3  
