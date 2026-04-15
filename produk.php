@@ -13,18 +13,18 @@ if (isset($_GET['hapus'])) {
 
 // Handle Form Submit
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $nama = $_POST['nama_produk'];
+    $nama = $_POST['nama_item'];
     $harga = $_POST['harga'];
     $stok = $_POST['stok'];
     
     if (isset($_POST['id']) && $_POST['id'] != '') {
         // Update
-        $stmt = $pdo->prepare("UPDATE produk SET NamaProduk = ?, Harga = ?, Stok = ? WHERE ProdukID = ?");
+        $stmt = $pdo->prepare("UPDATE produk SET NamaItem = ?, Harga = ?, Stok = ? WHERE ProdukID = ?");
         $stmt->execute([$nama, $harga, $stok, $_POST['id']]);
         $pesan = 'edit_sukses';
     } else {
         // Insert
-        $stmt = $pdo->prepare("INSERT INTO produk (NamaProduk, Harga, Stok) VALUES (?, ?, ?)");
+        $stmt = $pdo->prepare("INSERT INTO produk (NamaItem, Harga, Stok) VALUES (?, ?, ?)");
         $stmt->execute([$nama, $harga, $stok]);
         $pesan = 'tambah_sukses';
     }
@@ -38,13 +38,13 @@ $produk = $pdo->query("SELECT * FROM produk ORDER BY ProdukID DESC")->fetchAll()
 
 <div class="glass-panel">
     <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
-        <h2>Kelola Produk / Stok Barang</h2>
+        <h2>Kelola Belanjaan / Stok</h2>
         <button onclick="document.getElementById('modalTambah').classList.add('show')" class="btn btn-primary">➕ Tambah Produk</button>
     </div>
 
     <?php if (isset($_GET['pesan'])): ?>
         <div class="alert alert-success">
-            <?= $_GET['pesan'] == 'tambah_sukses' ? 'Produk berhasil ditambahkan!' : ($_GET['pesan'] == 'edit_sukses' ? 'Produk berhasil diubah!' : 'Produk berhasil dihapus!') ?>
+            <?= $_GET['pesan'] == 'tambah_sukses' ? 'Item berhasil ditambahkan!' : ($_GET['pesan'] == 'edit_sukses' ? 'Produk berhasil diubah!' : 'Produk berhasil dihapus!') ?>
         </div>
     <?php endif; ?>
 
@@ -53,7 +53,7 @@ $produk = $pdo->query("SELECT * FROM produk ORDER BY ProdukID DESC")->fetchAll()
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th>Nama Produk</th>
+                    <th>Nama Item</th>
                     <th>Harga</th>
                     <th>Stok</th>
                     <th>Aksi</th>
@@ -63,7 +63,7 @@ $produk = $pdo->query("SELECT * FROM produk ORDER BY ProdukID DESC")->fetchAll()
                 <?php foreach ($produk as $p): ?>
                 <tr>
                     <td><?= $p['ProdukID'] ?></td>
-                    <td><?= htmlspecialchars($p['NamaProduk']) ?></td>
+                    <td><?= htmlspecialchars($p['Nama Produk']) ?></td>
                     <td>Rp <?= number_format($p['Harga'], 0, ',', '.') ?></td>
                     <td>
                         <span style="padding: 4px 8px; border-radius: 4px; background: <?= $p['Stok'] > 5 ? 'rgba(16, 185, 129, 0.2)' : 'rgba(239, 68, 68, 0.2)' ?>; color: <?= $p['Stok'] > 5 ? '#6EE7B7' : '#FCA5A5' ?>; font-weight: bold;">

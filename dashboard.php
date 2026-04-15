@@ -26,7 +26,7 @@ $pendapatan_formatted = "Rp " . number_format($stats['pendapatan_hari_ini'], 0, 
 
 <div class="metric-grid">
     <div class="glass-panel metric-card">
-        <div class="metric-title">Total Produk</div>
+        <div class="metric-title">Total Belanja</div>
         <div class="metric-value"><?= $stats['produk'] ?></div>
         <div class="metric-icon">📦</div>
     </div>
